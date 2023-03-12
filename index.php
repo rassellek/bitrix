@@ -3,6 +3,8 @@ require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Биржа недвижимости");
 ?>
 
+<? $APPLICATION->SetPageProperty("NOT_SHOW_NAV_CHAIN", "Y") ?>
+
 <?
 global $arrFilter;
 if (!is_array($arrFilter))
