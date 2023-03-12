@@ -3,7 +3,7 @@ require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Вакансии");
 ?><?$APPLICATION->IncludeComponent(
 	"bitrix:news", 
-	".default", 
+	"mcart", 
 	array(
 		"ADD_ELEMENT_CHAIN" => "N",
 		"ADD_SECTIONS_CHAIN" => "Y",
@@ -47,7 +47,8 @@ $APPLICATION->SetTitle("Вакансии");
 		),
 		"LIST_PROPERTY_CODE" => array(
 			0 => "",
-			1 => "",
+			1 => "[DISLIKE]",
+			2 => "[LIKE]",
 		),
 		"MESSAGE_404" => "",
 		"META_DESCRIPTION" => "-",
@@ -75,11 +76,25 @@ $APPLICATION->SetTitle("Вакансии");
 		"USE_CATEGORIES" => "N",
 		"USE_FILTER" => "N",
 		"USE_PERMISSIONS" => "N",
-		"USE_RATING" => "N",
+		"USE_RATING" => "Y",
 		"USE_REVIEW" => "N",
 		"USE_RSS" => "N",
 		"USE_SEARCH" => "N",
-		"COMPONENT_TEMPLATE" => ".default",
+		"COMPONENT_TEMPLATE" => "mcart",
+		"MAX_VOTE" => "5",
+		"VOTE_NAMES" => array(
+			0 => "1",
+			1 => "2",
+			2 => "3",
+			3 => "4",
+			4 => "5",
+			5 => "",
+		),
+		"DISPLAY_AS_RATING" => "rating",
+		"DISPLAY_DATE" => "Y",
+		"DISPLAY_PICTURE" => "Y",
+		"DISPLAY_PREVIEW_TEXT" => "Y",
+		"USE_SHARE" => "N",
 		"SEF_URL_TEMPLATES" => array(
 			"news" => "",
 			"section" => "",
