@@ -223,10 +223,4 @@ $arrFilter['!PROPERTY_PRIORITYDEAL'] = false;
 	),
 	false
 ); ?>
-
-<p>
-</p>
-<p>
-</p>
-<br>
 <? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
