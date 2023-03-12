@@ -37,7 +37,8 @@ $arrFilter['!PROPERTY_PRIORITYDEAL'] = false;
 		"DISPLAY_TOP_PAGER" => "N",
 		"FIELD_CODE" => array(
 			0 => "",
-			1 => "",
+			1 => "DETAIL_PICTURE",
+			2 => "",
 		),
 		"FILTER_NAME" => "arrFilter",
 		"HIDE_LINK_WHEN_NO_DETAIL" => "N",

@@ -1129,3 +1129,14 @@ a {
 
 .feature .text p {
   color: #888; }
+
+  .site-pagination .active {
+    display: inline-block;
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid transparent;
+    background: #f89d13;
+    color: #fff;
+}

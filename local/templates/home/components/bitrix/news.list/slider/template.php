@@ -25,7 +25,7 @@ $this->setFrameMode(true);
 		<div id="<?= $this->GetEditAreaId($arItem['ID']); ?>">
 			<? if (is_array($arItem["PREVIEW_PICTURE"])): ?>
 
-				<div class="site-blocks-cover" style="background-image: url('<?= $arItem["PREVIEW_PICTURE"]["SRC"] ?>');"
+				<div class="site-blocks-cover" style="background-image: url('<?= $arItem["DETAIL_PICTURE"]["SRC"] ?>');"
 					data-aos="fade" data-stellar-background-ratio="0.5">
 
 				<? endif; ?>
