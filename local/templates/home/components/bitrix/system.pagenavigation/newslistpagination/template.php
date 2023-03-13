@@ -8,7 +8,7 @@ $strNavQueryStringFull = ($arResult["NavQueryString"] != "" ? "?".$arResult["Nav
 if($arResult["NavPageCount"] > 1)
 {
 ?>
-<div class="row">
+<div>
 	       <div class="col-md-12 text-center">
             <div class="site-pagination">
 <?
