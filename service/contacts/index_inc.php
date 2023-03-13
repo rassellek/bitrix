@@ -1,16 +1,14 @@
-<div class="site-section border-bottom">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <img src="/local/templates/home/images/about.jpg" alt="Image" class="img-fluid">
-          </div>
-          <div class="col-md-5 ml-auto"  data-aos="fade-up" data-aos-delay="200">
-            <div class="site-section-title mb-3">
-              <h2>Наши контакты</h2>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus in cum odio.</p>
-            <p>Illum repudiandae ratione facere explicabo. Consequatur dolor optio iusto, quos autem voluptate ea? Sunt laudantium fugiat, mollitia voluptate? Modi blanditiis veniam nesciunt architecto odit voluptatum tempore impedit magnam itaque natus!</p>
-          </div>
-        </div>
-      </div>
-    </div>
+<div class="col-lg-4">
+	<div class="p-4 mb-3 bg-white">
+		<h3 class="h6 text-black mb-3 text-uppercase">Contact Info</h3>
+		<p class="mb-0 font-weight-bold">Address</p>
+		<p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
+
+		<p class="mb-0 font-weight-bold">Phone</p>
+		<p class="mb-4"><a href="#">+1 232 3235 324</a></p>
+
+		<p class="mb-0 font-weight-bold">Email Address</p>
+		<p class="mb-0"><a href="#">youremail@domain.com</a></p>
+
+	</div>
+</div>
