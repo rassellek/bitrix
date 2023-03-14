@@ -3,7 +3,7 @@
 
 <? if (!empty($arResult)): ?>
 
-	<div class="col-4 col-md-4 col-lg-8">
+	<div class="col-4 col-md-4 col-lg-10">
 		<nav class="site-navigation text-right text-md-right" role="navigation">
 
 			<div class="d-inline-block d-lg-none ml-md-0 mr-auto py-3"><a href="#"

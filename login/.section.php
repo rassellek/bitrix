@@ -1,6 +1,6 @@
 <?
-$sSectionName = "Вход на сайт";
-$arDirProperties = array(
+$sSectionName = "Авторизация";
+$arDirProperties = Array(
 
 );
 ?>

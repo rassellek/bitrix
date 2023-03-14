@@ -122,7 +122,7 @@ use Bitrix\Main\Page\Asset;
         <div class="site-navbar">
             <div class="container py-1">
                 <div class="row align-items-center">
-                    <div class="col-8 col-md-8 col-lg-4">
+                    <div class="col-8 col-md-8 col-lg-2">
                         <h1 class="">
                             <a href="/" class="h5 text-uppercase text-black">
                                 <? $APPLICATION->IncludeComponent(
