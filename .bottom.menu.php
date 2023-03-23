@@ -37,14 +37,14 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Контакты", 
-		"contacts/", 
+		"/contacts/", 
 		Array(), 
 		Array(), 
 		"" 
 	),
 	Array(
 		"Авторизация", 
-		"login/", 
+		"/login/", 
 		Array(), 
 		Array(), 
 		"" 
