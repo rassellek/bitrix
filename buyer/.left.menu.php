@@ -1,11 +1,11 @@
 <?
-$aMenuLinks = Array(
-	Array(
-		"Избранное", 
-		"/buyer/favourites/", 
-		Array(), 
-		Array(), 
-		"" 
-	)
+$aMenuLinks = array(
+    array(
+        "Избранное",
+        "/buyer/favourites/",
+        array(),
+        array(),
+        ""
+    )
 );
 ?>

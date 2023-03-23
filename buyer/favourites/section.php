@@ -1,6 +1,6 @@
 <?
 $sSectionName = "Избранное";
-$arDirProperties = Array(
+$arDirProperties = array(
 
 );
 ?>
