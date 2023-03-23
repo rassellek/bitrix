@@ -2771,6 +2771,11 @@ hr + .catalog-box {
   color: #ff0000;
 }
 .nav .menu .color-green{
-  color: #00ff43;
+  color: #00ff00;
 }
-
+.nav .menu .color-blue{
+  color: #0000ff;
+}
+.nav .menu .color-yellow{
+  color: #ffff00;
+}

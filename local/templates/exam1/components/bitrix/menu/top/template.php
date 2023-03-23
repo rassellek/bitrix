@@ -1,6 +1,8 @@
 <? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
 	die(); ?>
 <? if (!empty($arResult)): ?>
+
+
 	<div class="menu-block popup-wrap">
 		<a href="" class="btn-menu btn-toggle"></a>
 		<div class="menu popup-block">
@@ -10,7 +12,10 @@
 					</a></li>
 				<?
 				$previousLevel = 0;
-				foreach ($arResult as $arItem): ?>
+				foreach ($arResult as $arItem):
+					?>
+
+					<? $menu_top_class = trim($APPLICATION->GetDirProperty('menu_top_class', $arItem["LINK"])); ?>
 
 					<? if ($previousLevel && $arItem["DEPTH_LEVEL"] < $previousLevel): ?>
 						<?= str_repeat("</ul></li>", ($previousLevel - $arItem["DEPTH_LEVEL"])); ?>
@@ -19,12 +24,19 @@
 					<? if ($arItem["IS_PARENT"]): ?>
 
 						<? if ($arItem["DEPTH_LEVEL"] == 1): ?>
-							<li><a href="<?= $arItem["LINK"] ?>"
-									class="<? if ($arItem["SELECTED"]): ?>root-item-selected<? else: ?>root-item<? endif ?>"><?= $arItem["TEXT"] ?></a>
+							<li>
+								<a href="<?= $arItem["LINK"] ?>" class="<? if ($arItem["SELECTED"]): ?>root-item-selected<? else: ?>root-item<? endif ?> 
+									<? if ($menu_top_class): ?><?= $menu_top_class ?><? endif ?>">
+									<?= $arItem["TEXT"] ?>
+								</a>
 								<ul>
 								<? else: ?>
-									<li <? if ($arItem["SELECTED"]): ?> class="item-selected" <? endif ?>><a
-											href="<?= $arItem["LINK"] ?>" class="parent"><?= $arItem["TEXT"] ?></a>
+									<li <? if ($arItem["SELECTED"]): ?> class="item-selected" <? endif ?>>
+
+										<a href="<?= $arItem["LINK"] ?>" class="parent">
+											<?= $arItem["TEXT"] ?>
+										</a>
+
 										<ul>
 										<? endif ?>
 
@@ -45,8 +57,8 @@
 											<? endif; ?>
 
 											<? if ($arItem["DEPTH_LEVEL"] == 1): ?>
-												<li><a href="<?= $arItem["LINK"] ?>"
-														class="<? if ($arItem["SELECTED"]): ?>root-item-selected<? else: ?>root-item<? endif ?>"><?= $arItem["TEXT"] ?></a>
+												<li><a href="<?= $arItem["LINK"] ?>" class="<? if ($arItem["SELECTED"]): ?>root-item-selected<? else: ?>root-item<? endif ?> 
+															<? if ($menu_top_class): ?><?= $menu_top_class ?><? endif ?>"><?= $arItem["TEXT"] ?></a>
 												</li>
 											<? else: ?>
 												<li <? if ($arItem["SELECTED"]): ?> class="item-selected" <? endif ?>><a
@@ -80,5 +92,6 @@
 						<? endif ?>
 						<a href="" class="btn-close"></a>
 	</div>
+
 	<div class="menu-overlay"></div>
 </div>
