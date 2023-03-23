@@ -19,7 +19,7 @@ $aMenuLinks = Array(
 		"mission.php", 
 		Array(), 
 		Array(), 
-		"" 
+		"\$USER->IsAuthorized();" 
 	),
 	Array(
 		"История", 
