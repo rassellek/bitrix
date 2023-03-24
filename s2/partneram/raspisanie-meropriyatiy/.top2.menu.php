@@ -1,11 +1,18 @@
 <?
-$aMenuLinks = Array(
-	Array(
-		"Архив", 
-		"arkhiv.php", 
-		Array(), 
-		Array(), 
-		"" 
+$aMenuLinks = array(
+	array(
+		"Анонсы",
+		" ",
+		array(),
+		array(),
+		""
+	),
+	array(
+		"Архив",
+		"arkhiv.php",
+		array(),
+		array(),
+		""
 	)
 );
 ?>

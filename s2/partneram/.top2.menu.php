@@ -1,18 +1,25 @@
 <?
-$aMenuLinks = Array(
-	Array(
-		"Как стать партнером", 
-		"kak-stat-partnerom.php", 
-		Array(), 
-		Array(), 
-		"" 
+$aMenuLinks = array(
+	array(
+		"Условия сотрудничества",
+		"/s2/partneram/",
+		array(),
+		array(),
+		""
 	),
-	Array(
-		"Расписание мероприятий", 
-		"raspisanie-meropriyatiy/", 
-		Array(), 
-		Array(), 
-		"" 
+	array(
+		"Как стать партнером",
+		"kak-stat-partnerom.php",
+		array(),
+		array(),
+		""
+	),
+	array(
+		"Расписание мероприятий",
+		"raspisanie-meropriyatiy/",
+		array(),
+		array(),
+		""
 	)
 );
 ?>

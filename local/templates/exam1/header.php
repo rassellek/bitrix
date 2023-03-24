@@ -128,11 +128,19 @@ use Bitrix\Main\Page\Asset;
 			<!-- breadcrumbs -->
 			<div class="breadcrumbs-box">
 				<div class="inner-wrap">
-					<a href="">Главная</a>
-					<a href="">Мебель</a>
-					<span>Выставки и события</span>
+
+					<? $APPLICATION->IncludeComponent(
+						"bitrix:breadcrumb",
+						"breadcrumb",
+						array(
+							"PATH" => "",
+							"SITE_ID" => "s2",
+							"START_FROM" => "0"
+						)
+					); ?>
 				</div>
 			</div>
+
 			<!-- /breadcrumbs -->
 		<? endif; ?>
 
