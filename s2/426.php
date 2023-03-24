@@ -3,11 +3,12 @@ require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetPageProperty("title", "Билет 3");
 $APPLICATION->SetTitle("Мебельная компания");
 ?><?$APPLICATION->IncludeComponent(
-	"bitrix:breadcrumb",
+	"bitrix:main.include",
 	"",
 	Array(
-		"PATH" => "",
-		"SITE_ID" => "s2",
-		"START_FROM" => "0"
+		"AREA_FILE_SHOW" => "file",
+		"AREA_FILE_SUFFIX" => "inc",
+		"EDIT_TEMPLATE" => "",
+		"PATH" => ""
 	)
 );?><? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
