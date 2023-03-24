@@ -4,7 +4,7 @@ $aMenuLinks = Array(
 		"Компания", 
 		"/s2/company/", 
 		Array(), 
-		Array("DESCRIPTION"=>"текст для пункта Компания"), 
+		Array(), 
 		"" 
 	),
 	Array(

@@ -16,6 +16,7 @@
 					?>
 
 					<? $menu_top_class = trim($APPLICATION->GetDirProperty('menu_top_class', $arItem["LINK"])); ?>
+					<? $menu_top_text = trim($APPLICATION->GetDirProperty('menu_top_text', $arItem["LINK"])); ?>
 
 					<? if ($previousLevel && $arItem["DEPTH_LEVEL"] < $previousLevel): ?>
 						<?= str_repeat("</ul></li>", ($previousLevel - $arItem["DEPTH_LEVEL"])); ?>
@@ -24,12 +25,18 @@
 					<? if ($arItem["IS_PARENT"]): ?>
 
 						<? if ($arItem["DEPTH_LEVEL"] == 1): ?>
+
 							<li>
 								<a href="<?= $arItem["LINK"] ?>" class="<? if ($arItem["SELECTED"]): ?>root-item-selected<? else: ?>root-item<? endif ?> 
 									<? if ($menu_top_class): ?><?= $menu_top_class ?><? endif ?>">
 									<?= $arItem["TEXT"] ?>
 								</a>
 								<ul>
+									<? if ($menu_top_text): ?>
+										<div class="menu-text">
+											<?= $menu_top_text ?>
+										</div>
+									<? endif ?>
 								<? else: ?>
 									<li <? if ($arItem["SELECTED"]): ?> class="item-selected" <? endif ?>>
 
@@ -38,23 +45,16 @@
 										</a>
 
 										<ul>
+											<? if ($menu_top_text): ?>
+												<div class="menu-text">
+													<?= $menu_top_text ?>
+												</div>
+											<? endif ?>
 										<? endif ?>
-
-										<? if (isset($arItem["PARAMS"]["DESCRIPTION"])): ?>
-											<div class="menu-text">
-												<?= $arItem["PARAMS"]["DESCRIPTION"]; ?>
-											</div>
-										<? endif; ?>
 
 									<? else: ?>
 
 										<? if ($arItem["PERMISSION"] > "D"): ?>
-
-											<? if (isset($arItem["PARAMS"]["DESCRIPTION"])): ?>
-												<div class="menu-text">
-													<?= $arItem["PARAMS"]["DESCRIPTION"]; ?>
-												</div>
-											<? endif; ?>
 
 											<? if ($arItem["DEPTH_LEVEL"] == 1): ?>
 												<li><a href="<?= $arItem["LINK"] ?>" class="<? if ($arItem["SELECTED"]): ?>root-item-selected<? else: ?>root-item<? endif ?> 
