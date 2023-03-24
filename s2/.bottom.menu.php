@@ -1,19 +1,27 @@
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
+<? if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true)
+	die(); ?>
 <?
-$aMenuLinks = Array(
-	Array(
-		"Контакты", 
-		"contacts/", 
-		Array(), 
-		Array(), 
-		"" 
+$aMenuLinks = array(
+	array(
+		"Отзывы",
+		"rew/",
+		array(),
+		array(),
+		""
 	),
-	Array(
-		"Авторизация", 
-		"login/", 
-		Array(), 
-		Array(), 
-		"" 
+	array(
+		"Руководство",
+		"company/management.php",
+		array(),
+		array(),
+		""
+	),
+	array(
+		"Итория",
+		"company/history.php",
+		array(),
+		array(),
+		""
 	)
 );
 ?>
