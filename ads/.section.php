@@ -1,5 +1,5 @@
 <?
-$arDirProperties = Array(
+$arDirProperties = array(
    "title" => "Объявления"
 );
 ?>
