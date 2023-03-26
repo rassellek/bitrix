@@ -70,7 +70,7 @@ $this->setFrameMode(true);
                         <? //<Показывать первые 150 символов текста отзыва из анонса> ?>
                         <? if ($arParams["DISPLAY_PREVIEW_TEXT"] != "N" && $arItem["PREVIEW_TEXT"]): ?>
                             <div class="text-block">
-                                <?= mb_substr($arItem["PREVIEW_TEXT"], 0, 150, 'UTF-8'); ?> ...
+                                <?= $arItem["PREVIEW_TEXT"] ?>
                             </div>
                         <? endif; ?>
                     </div>
