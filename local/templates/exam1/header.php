@@ -56,8 +56,8 @@ use Bitrix\Main\Page\Asset;
 				</div>
 
 				<div class="actions-block">
-					<form action="/" class="main-frm-search">
-						<input type="text" placeholder="Поиск">
+					<form action="/s2/search/" class="main-frm-search" metod="get">
+						<input type="text" name="q" placeholder="Поиск">
 						<button type="submit"></button>
 					</form>
 					<nav class="menu-block">

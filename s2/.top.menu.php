@@ -1,46 +1,53 @@
 <?
-$aMenuLinks = Array(
-	Array(
-		"Компания", 
-		"/s2/company/", 
-		Array(), 
-		Array(), 
-		"" 
+$aMenuLinks = array(
+	array(
+		"Компания",
+		"/s2/company/",
+		array(),
+		array(),
+		""
 	),
-	Array(
-		"Новости", 
-		"/s2/news/", 
-		Array(), 
-		Array(), 
-		"" 
+	array(
+		"Новости",
+		"/s2/news/",
+		array(),
+		array(),
+		""
 	),
-	Array(
-		"Продукция", 
-		"/s2/products/", 
-		Array(), 
-		Array(), 
-		"" 
+	array(
+		"Продукция",
+		"/s2/products/",
+		array(),
+		array(),
+		""
 	),
-	Array(
-		"Услуги", 
-		"/s2/services/", 
-		Array(), 
-		Array(), 
-		"" 
+	array(
+		"Услуги",
+		"/s2/services/",
+		array(),
+		array(),
+		""
 	),
-	Array(
-		"Партнерам", 
-		"/s2/partneram/", 
-		Array(), 
-		Array(), 
-		"" 
+	array(
+		"Партнерам",
+		"/s2/partneram/",
+		array(),
+		array(),
+		""
 	),
-	Array(
-		"Отзывы", 
-		"/s2/rew/", 
-		Array(), 
-		Array(), 
-		"" 
-	)
+	array(
+		"Отзывы",
+		"/s2/rew/",
+		array(),
+		array(),
+		""
+	),
+	array(
+		"Поиск",
+		"/s2/search/",
+		array(),
+		array(),
+		""
+	),
 );
 ?>
