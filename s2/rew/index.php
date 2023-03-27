@@ -3,8 +3,8 @@ require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
 $APPLICATION->SetTitle("Отзывы");
 ?>
 <? $APPLICATION->IncludeComponent(
-	"bitrix:news", 
-	"rew", 
+	"bitrix:news",
+	"rew",
 	array(
 		"ADD_ELEMENT_CHAIN" => "N",
 		"ADD_SECTIONS_CHAIN" => "N",
@@ -55,7 +55,7 @@ $APPLICATION->SetTitle("Отзывы");
 			1 => "PREVIEW_TEXT",
 			2 => "PREVIEW_PICTURE",
 			3 => "ACTIVE_FROM",
-			4 => "",
+			4 => "DETAIL_PICTURE",
 		),
 		"LIST_PROPERTY_CODE" => array(
 			0 => "POSITION",
