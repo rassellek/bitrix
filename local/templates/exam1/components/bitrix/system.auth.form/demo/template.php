@@ -74,18 +74,43 @@ if ($arResult["FORM_TYPE"] == "login") {
 					<div class="frm-row">
 						<input type="submit" name="Login" value="<?= GetMessage("AUTH_LOGIN_BUTTON") ?>">
 					</div>
-					<?
-					$APPLICATION->IncludeComponent(
-						"bitrix:socserv.auth.form",
-						"icons",
-						array(
-							"AUTH_SERVICES" => $arResult["AUTH_SERVICES"],
-							"SUFFIX" => "form",
-						),
-						$component,
-						array("HIDE_ICONS" => "Y")
-					);
-					?>
+
+					<? //<Авторизация через соц.сети> ?>
+					<? if ($arResult["AUTH_SERVICES"]): ?>
+						<div class="frm-row">
+							<div class="bx-auth-lbl">
+								<?= GetMessage("socserv_as_user_form") ?>
+							</div>
+							<?
+							$APPLICATION->IncludeComponent(
+								"bitrix:socserv.auth.form",
+								"icons",
+								[
+									"AUTH_SERVICES" => $arResult["AUTH_SERVICES"],
+									"SUFFIX" => "form",
+								],
+								$component,
+								["HIDE_ICONS" => "Y"]
+							);
+							?>
+							<?
+							$APPLICATION->IncludeComponent(
+								"bitrix:socserv.auth.form",
+								"",
+								array(
+									"AUTH_SERVICES" => $arResult["AUTH_SERVICES"],
+									"AUTH_URL" => $arResult["AUTH_URL"],
+									"POST" => $arResult["POST"],
+									"POPUP" => "Y",
+									"SUFFIX" => "form",
+								),
+								$component,
+								array("HIDE_ICONS" => "Y")
+							);
+							?>
+						</div>
+					<? endif ?>
+
 				</form>
 			</li>
 			<li><a href="<?= $arParams['REGISTER_URL'] ?>"><?= GetMessage("AUTH_REGISTER") ?></a></li>

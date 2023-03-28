@@ -1,5 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetPageProperty("menu_left_class", "red");
 $APPLICATION->SetPageProperty("title", "О компании");
 $APPLICATION->SetTitle("О компании");
 ?><img height="283" width="475" src="/s2/upload/company.jpg" /> 
